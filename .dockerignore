@@ -1,0 +1,6 @@
+# Exclude all.
+# Include files adding then at the end prepending "!" to them.
+*
+!bin
+!requirements.txt
+!requirements.system
