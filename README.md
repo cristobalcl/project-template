@@ -10,8 +10,10 @@ shortcuts for Django.
 Usage
 -----
 
-> git clone --depth=1 https://github.com/cristobalcl/project-template.git my_app
-> rm -rf my_app/.git
+```bash
+git clone --depth=1 https://github.com/cristobalcl/project-template.git my_app
+rm -rf my_app/.git
+```
 
 Disclaimer
 ----------
