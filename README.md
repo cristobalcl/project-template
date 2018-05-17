@@ -11,8 +11,7 @@ Usage
 -----
 
 ```bash
-git clone --depth=1 https://github.com/cristobalcl/project-template.git my_app
-rm -rf my_app/.git
+N=my_app; git clone --depth=1 https://github.com/cristobalcl/project-template.git $N && rm -rf $N/.git
 ```
 
 Disclaimer
