@@ -13,7 +13,7 @@ sudo apt-get install -y python3 python3-virtualenv
 
 if [ -e requirements.system ]; then
     echo "==> Installing system dependencies…"
-    cat requirements.system | sudo xargs apt-get install -y
+    cat requirements_sys.txt | sudo xargs apt-get install -y
 fi
 
 if [ ! -d $ENV ]; then
@@ -24,4 +24,9 @@ fi
 if [ -e requirements.txt ]; then
     echo "==> Installing Python dependencies…"
     $ENV/bin/pip install -r requirements.txt
+fi
+
+if [ -e requirements.dev ]; then
+    echo "==> Installing Python dependencies for development…"
+    $ENV/bin/pip install -r requirements_dev.txt
 fi
